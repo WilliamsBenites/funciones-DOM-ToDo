@@ -53,3 +53,24 @@ El usuario presiona el botón "Eliminar" junto a una tarjeta, llamando a deleteT
 ### 5
 El usuario presiona el botón "Eliminar Todos", activando clearTodos() para reiniciar la lista.
 
+# JSON
+- Lista de tareas: http://localhost:3000/todos
+    Puedes ver y manipular las tareas agregadas, editadas o eliminadas.
+
+- Agrega tareas: Introduce texto en el campo de entrada y haz clic en        "Agregar". Esto realizará una solicitud POST a http://localhost:3000/todos y la     tarea se guardará en el archivo db.json.    
+
+## db.json
+- Este archivo almacenará las tareas. Su estructura inicial será algo como esto:
+json
+``
+{
+  "todos": []
+}
+``
+3. Actualizar el código de tu aplicación para usar la API:
+Cambia las funciones de la aplicación para que interactúen con la API en lugar de usar localStorage.
+
+- Agregar tareas: Se envía una solicitud POST a la API.
+    Editar tareas: Se envía una solicitud PUT a la API.
+    Eliminar tareas: Se envía una solicitud DELETE a la API.
+    Eliminar todas las tareas: Se envía una solicitud DELETE a la API para limpiar la lista de tareas.

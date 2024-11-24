@@ -8,21 +8,22 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="todo-container">
+    <div id="users" class="todo-container">
         <div class="todo-card">
-            <h1>Nombre y Apellido</h1>
-            <div class="input">
-                <div class="todo-input">
-                    <input class="input-bor" id="new-todo" type="text" placeholder="Nombre y Apellido" />
-                    <button class="button-agregar" onclick="addTodo()">Agregar</button>
-                    <button class="button-eliminar" onclick="clearTodos()">Eliminar Todos</button>
-                    <div id="todo-list"></div>
-                </div>
+          <h1>Lista de Tareas</h1>
+          <div class="input">
+            <div class="todo-input">
+              <input id="new-todo" type="text" placeholder="Escribe una tarea..." />
+              <button onclick="addTodo()">Agregar</button>
+              <button onclick="clearTodos()">Eliminar Todos</button>
             </div>
+            <div id="todo-list"></div>
+          </div>
         </div>
       </div>
 
 
       <script src="./app.js"></script>
+      
 </body>
 </html>

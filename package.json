@@ -1,0 +1,14 @@
+{
+  "name": "funcionestodo",
+  "version": "1.0.0",
+  "description": "- Tipo: Array   Descripción: Arreglo que almacena los objetos de las tareas. Cada objeto tiene una propiedad text que representa el contenido de la tarea. ``let todos = JSON.parse(localStorage.getItem(\"todos\")) || [];``",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BenitesJosep",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
